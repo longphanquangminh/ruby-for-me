@@ -226,7 +226,7 @@ class Square
         return "Side Length: #{@side_length}\nPerimeter: #{perimeter}\nArea: #{area}"
     end
 
-    def draw
+    def draw # vẽ hình vuông
         puts "*" * @side_length
         (@side_length - 2).times do
             print "*" + (" " * (@side_length-2)) + "*\n"
