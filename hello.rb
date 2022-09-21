@@ -146,12 +146,53 @@ boolean
 # end
 
 # New example - Hash
-names = ["John", "Tim", "Mary"]
 
-favorite_pizza = {
-    "John" => "Pepperoni",
-    "Tim" => "Mushroom",
-    "Mary" => "Cheese"
-}
+# names = ["John", "Tim", "Mary"]
 
-puts favorite_pizza["John"]
+# favorite_pizza = {
+#     "John" => "Pepperoni",
+#     "Tim" => "Mushroom",
+#     "Mary" => "Cheese"
+# }
+
+# puts favorite_pizza["John"]
+
+# New example - FizzBuzz
+
+# (1..100).each do |num|
+#     # puts num
+#     if num % 3 == 0 && num % 5 == 0
+#         puts "#{num}. FIZZBUZZ!"
+
+#     elsif num % 3 == 0
+#         puts "#{num}. FIZZ!"
+#     elsif num % 5 == 0
+#         puts "#{num}. BUZZ!"
+#     else
+#         puts "#{num}."
+#     end
+# end
+
+# 21. Methods Part 1
+
+# def hello(num)
+#     puts "Hello there #{num + 10}"
+# end
+
+
+# hello(89)
+
+# 22. Methods Part 2
+
+# def hello(first_name, last_name)
+#     return "Hello there #{ first_name } #{ last_name }"
+# end
+
+# f_name = "John"
+# # puts hello(f_name, "Elder")
+
+# method_output = hello(f_name, "Elder")
+# puts method_output.upcase
+
+# 23. Class
+
