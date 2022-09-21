@@ -194,5 +194,61 @@ boolean
 # method_output = hello(f_name, "Elder")
 # puts method_output.upcase
 
-# 23. Class
+# 24 + 25 + 26 + 27 + 28 + 29 + 30. Ruby Classes Part 1 (no 23)
 
+class Square
+    # attr_reader
+    # attr_writer
+    # attr_accessor :side_length, :area, :blabla # liệt kê nhiều
+    attr_accessor :side_length
+    def initialize(side_length)
+        @side_length = side_length
+    end
+
+    # no need these comment lines because I have attr_accessor
+    # def side_length
+    #     return @side_length
+    # end
+
+    # def side_length=(side_length)
+    #     @side_length = side_length
+    # end
+
+    def perimeter
+        return "#{@side_length * 4}"
+    end
+
+    def area
+        return @side_length * @side_length
+    end
+
+    def to_s
+        return "Side Length: #{@side_length}\nPerimeter: #{perimeter}\nArea: #{area}"
+    end
+
+    def draw
+        puts "*" * @side_length
+        (@side_length - 2).times do
+            print "*" + (" " * (@side_length-2)) + "*\n"
+        end
+        puts "*" * @side_length
+    end
+
+end
+
+my_square = Square.new(5)
+
+# # puts my_square
+# # puts my_square.inspect
+# puts my_square.side_length
+
+# # my_square.side_length = 20
+
+# # puts my_square.side_length
+
+# puts my_square.perimeter
+# puts my_square.area
+
+# puts my_square
+
+puts my_square.draw
